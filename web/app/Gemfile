@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
 # Use mysql as the database for Active Record
@@ -21,41 +20,42 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 #jquery ui
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '6.0.1'
 #authentication and roles
-gem 'devise'
-gem 'cancancan'
-gem 'rolify'
+gem 'devise', '4.3.0'
+gem 'cancancan', '2.1.2'
+gem 'rolify', '5.1.0'
 #bootstrap
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '3.3.7'
 # pagination
-gem 'will_paginate'
-gem 'will_paginate-bootstrap'
+gem 'will_paginate', '3.1.6'
+gem 'will_paginate-bootstrap', '1.0.1'
 #validations
-gem "jquery-validation-rails"
+gem "jquery-validation-rails", '1.16.0'
 # scanning stuff
 gem 'owasp-pipeline', '>= 0.8.7'
-gem 'whenever'
-gem 'chronic'
+gem 'whenever', '0.10.0'
+gem 'chronic', '0.10.2'
 #github api
-gem 'octokit'
+gem 'octokit', '4.7.0'
 #gitlab
-gem 'gitlab'
+gem 'gitlab', '4.2.0'
 #oauth
-gem 'omniauth'
-gem 'omniauth-github'
+gem 'omniauth', '1.7.1'
+gem 'omniauth-github', '1.3.0'
 # redis && caching
-gem 'redis-rails'
-gem 'rails-settings-cached'
-gem 'redis-namespace'
+gem 'redis-rails', '5.0.2'
+gem 'rails-settings-cached', '0.6.6'
+gem 'redis-namespace', '1.6.0'
+gem 'redis-store-testing', '0.0.2'
 #sidekiq
-gem 'sidekiq'
-gem 'sidekiq-status'
-gem 'sinatra', :require => false # for the UI
+gem 'sidekiq', '4.2.10'
+gem 'sidekiq-status', '0.7.0'
+gem 'sinatra', '1.4.8', :require => false # for the UI
 # ENV Variables
-gem 'figaro'
+gem 'figaro', '1.1.1'
 #eager load notification
-gem 'bullet'
+gem 'bullet', '5.7.0'
 #file upload
 gem "paperclip", "~> 5.0.0"
 # Use ActiveModel has_secure_password
@@ -65,79 +65,83 @@ gem "paperclip", "~> 5.0.0"
 #file upload
 gem 'remotipart', '~> 1.2'
 #datatables
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+#gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'jquery-datatables-rails', :git => 'https://github.com/rweng/jquery-datatables-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # faker
-gem 'faker'
+gem 'faker', '1.8.5'
 #font awesome
-gem "font-awesome-rails"
+gem "font-awesome-rails", '4.7.0.2'
 #nested from
-gem "nested_form"
+gem "nested_form", '0.3.2'
 #jira integration
-gem 'jira-ruby', github:'sumoheavy/jira-ruby'
+#gem 'jira-ruby', github:'sumoheavy/jira-ruby'
+gem 'jira-ruby', :git => 'https://github.com/sumoheavy/jira-ruby'
 gem 'soap4r-ng','2.0.3'
-gem 'jira4r'
+gem 'jira4r', '1.3.0'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.42'
-gem 'puma'
-gem 'foreman'
-gem 'actionpack-action_caching'
-gem 'spinjs-rails'
-gem 'activerecord-session_store'
-gem 'crack'
-gem 'execjs'
-gem 'therubyracer'
-gem 'ruby-nmap'
+gem 'puma', '3.11.0'
+gem 'foreman', '0.84.0'
+gem 'actionpack-action_caching', '1.2.0'
+gem 'spinjs-rails', '1.4'
+gem 'activerecord-session_store', '1.1.0'
+gem 'crack', '0.4.3'
+gem 'execjs', '2.7.0'
+gem 'therubyracer', '0.12.3'
+gem 'ruby-nmap', '0.9.2'
 #wp scan
-gem 'typhoeus'
-gem 'addressable'
-gem 'ruby-progressbar'
-gem 'terminal-table'
-gem 'yajl-ruby'
+gem 'typhoeus', '0.6.9'
+gem 'addressable', '2.3.6'
+gem 'ruby-progressbar', '1.9.0'
+gem 'terminal-table', '1.4.5'
+gem 'yajl-ruby', '1.3.1'
 #string formation
-gem 'kramdown'
-gem 'rails_autolink'
-gem 'RedCloth'
-gem 'loofah'
-gem 'premailer-rails'
-gem 'arachni'
-gem 'arachni-reactor'
-gem 'sidekiq-scheduler'
-gem 'toastr-rails'
-gem 'local_time'
-gem 'sidekiq-statistic'
-gem 'sidekiq-middleware'
-gem 'sidekiq-retries'
-gem 'god'
+gem 'kramdown', '1.4.1'
+gem 'rails_autolink', '1.1.6'
+gem 'RedCloth', '4.3.2'
+gem 'loofah', '2.0.3'
+gem 'premailer-rails', '1.10.1'
+gem 'arachni', '1.3.2'
+gem 'arachni-reactor', '0.1.0'
+gem 'sidekiq-scheduler', '2.1.10'
+gem 'toastr-rails', '1.0.3'
+gem 'local_time', '2.0.0'
+gem 'sidekiq-statistic', '1.2.0'
+gem 'sidekiq-middleware', '0.3.0'
+gem 'sidekiq-retries', '0.4.0'
+gem 'god', '0.13.7'
 #gem 'tagsinput-rails'
-gem 'tag-it-rails'
-gem 'best_in_place'
-gem 'spring'
-gem 'pry-rails'
-gem 'pry-byebug'
-gem 'aescrypt'
+gem 'tag-it-rails', '2.0.0'
+gem 'best_in_place', '3.1.1'
+gem 'spring', '2.0.2'
+gem 'pry-rails', '0.3.6'
+gem 'pry-byebug', '3.5.1'
+gem 'aescrypt', '1.0.0'
 group :development, :test do
-	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
-	gem 'byebug'
-	gem 'rspec'
-	gem "rspec-rails"
-	gem "factory_girl_rails"
-	gem 'capybara'
-	gem 'spring-commands-rspec'
-	gem 'database_cleaner'
+    # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+    gem 'byebug'
+    gem 'rspec'
+    gem "rspec-rails"
+    gem "factory_girl_rails"
+    gem 'capybara'
+    gem 'spring-commands-rspec'
+    gem 'database_cleaner'
+    gem 'mocha', '0.14.0'
 
 end
 
 group :development do
-	# Access an IRB console on exception pages or by using <%= console %> in views
-	gem 'web-console', '~> 2.0'
-	gem 'better_errors'
-	gem 'binding_of_caller'
-	# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-	#gem 'spring'
+    # Access an IRB console on exception pages or by using <%= console %> in views
+    gem 'web-console', '~> 2.0'
+    gem 'better_errors'
+    gem 'binding_of_caller'
+    # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+    #gem 'spring'
 end
 group :test do
-	gem 'webmock', '>=1.17.2'
-	gem 'simplecov'
+    gem 'webmock', '>=1.17.2'
+    gem 'simplecov'
 end
+
